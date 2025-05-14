@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elkaed | الموقع الشخصي</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2e0f1f1d0.js" crossorigin="anonymous"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .fade-in {
+      animation: fadeIn 2s ease-in-out;
+    }
+    .fade-up {
+      animation: fadeUp 1s ease-out;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .sticky-nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+    .nav-link {
+      transition: all 0.3s ease;
+    }
+    .nav-link:hover {
+      color: #48bb78;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+  <!-- Navbar -->
+  <nav class="sticky-nav bg-gray-800 text-white py-4 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center px-6">
+      <a href="#" class="text-2xl font-bold">Elkaed</a>
+      <div class="space-x-6">
+        <a href="#about" class="nav-link">من أنا</a>
+        <a href="#skills" class="nav-link">المهارات</a>
+        <a href="#projects" class="nav-link">المشاريع</a>
+        <a href="mailto:Esokordy@gmail.com" class="nav-link">تواصل</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="min-h-screen flex flex-col justify-center items-center text-center p-4 bg-gradient-to-b from-gray-800 to-gray-900">
+    <img src="495966197_582550241525589_3068696488873947801_n.jpg" alt="Elkaed" class="w-48 h-48 rounded-full shadow-lg border-4 border-blue-400 mb-4 fade-in">
+    <h1 class="text-4xl font-bold mb-2">ELKAED</h1>
+    <p class="text-xl text-gray-300">مبرمج ومهتم بالأمن السيبراني</p>
+    <div class="mt-4 space-x-4">
+      <a href="mailto:Esokordy@gmail.com" class="text-blue-400 hover:underline"><i class="fas fa-envelope"></i> تواصل</a>
+      <a href="https://www.youtube.com/@Elkaed2555" target="_blank" class="text-red-500 hover:underline"><i class="fab fa-youtube"></i> يوتيوب</a>
+      <a href="https://www.facebook.com/Islam.Official2004" target="_blank" class="text-blue-600 hover:underline"><i class="fab fa-facebook"></i> فيسبوك</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 px-6 fade-up">
+    <h2 class="text-3xl font-bold text-center mb-6">من أنا</h2>
+    <p class="max-w-3xl mx-auto text-center text-gray-300">
+      مبرمج شغوف ومهتم باكتشاف ثغرات الأنظمة وتطوير أدوات الاختراق الأخلاقي. أعمل على بناء أدوات قوية لأغراض اختبار الأمان وتحليل الشبكات.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="bg-gray-800 py-16 px-6 fade-up">
+    <h2 class="text-3xl font-bold text-center mb-6">المهارات</h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 text-center">
+      <div class="bg-gray-700 p-4 rounded-lg">Python</div>
+      <div class="bg-gray-700 p-4 rounded-lg">Linux</div>
+      <div class="bg-gray-700 p-4 rounded-lg">Bash</div>
+      <div class="bg-gray-700 p-4 rounded-lg">Networking</div>
+      <div class="bg-gray-700 p-4 rounded-lg">Ethical Hacking</div>
+      <div class="bg-gray-700 p-4 rounded-lg">Burp Suite</div>
+      <div class="bg-gray-700 p-4 rounded-lg">Nmap</div>
+      <div class="bg-gray-700 p-4 rounded-lg">Wordlists</div>
+      <div class="bg-gray-700 p-4 rounded-lg">GitHub</div>
+      <div class="bg-gray-700 p-4 rounded-lg">Web Security</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-16 px-6 fade-up">
+    <h2 class="text-3xl font-bold text-center mb-6">المشاريع</h2>
+    <div class="space-y-4 text-center">
+      <p><a href="https://github.com/Elkaed3355999" target="_blank" class="text-blue-400 hover:underline">جميع المشاريع على GitHub <i class="fab fa-github"></i></a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-center py-6">
+    <p class="text-gray-400">&copy; 2025 Elkaed. جميع الحقوق محفوظة.</p>
+  </footer>
+
+</body>
+</html>
